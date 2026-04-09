@@ -129,6 +129,8 @@ cd frontend
 
 # Install dependencies
 npm install
+    or 
+npm install react@18.2.0 react-dom@18.2.0 react-router-dom@6.21.0 react-scripts@5.0.1 axios@1.6.2
 
 # Start development server
 npm start
