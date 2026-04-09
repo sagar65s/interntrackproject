@@ -91,11 +91,6 @@ export default function Login() {
         <Link to="/register">
           <button className="btn btn-ghost btn-full">Create Student Account</button>
         </Link>
-
-        <div style={{ marginTop: 20, padding: 14, background: 'var(--bg3)', borderRadius: 'var(--radius)', fontSize: '0.78rem', color: 'var(--text3)' }}>
-          <strong style={{ color: 'var(--text2)', display: 'block', marginBottom: 6 }}>Demo Credentials</strong>
-          Super Admin: superadmin@interntrack.com / SuperAdmin@123
-        </div>
       </div>
     </div>
   );
