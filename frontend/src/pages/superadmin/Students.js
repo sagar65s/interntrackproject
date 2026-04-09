@@ -137,7 +137,7 @@ export default function SuperStudents() {
                     </td>
                     <td>
                       {s.resumeUrl ? (
-                        <a href={s.resumeUrl} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm">📎 View</a>
+                        <a href={s.resumeUrl?.startsWith('http') ? s.resumeUrl : `http://localhost:5000${s.resumeUrl}`} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm">📎 View</a>
                       ) : <span style={{ color:'var(--text3)', fontSize:'0.8rem' }}>—</span>}
                     </td>
                     <td>

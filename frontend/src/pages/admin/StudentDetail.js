@@ -109,7 +109,7 @@ export default function AdminStudentDetail() {
             {student.resumeUrl ? (
               <div>
                 <div style={{ fontSize:'0.82rem', color:'var(--text3)', marginBottom:8 }}>{student.resumeOriginalName}</div>
-                <a href={student.resumeUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-full btn-sm">
+                <a href={student.resumeUrl?.startsWith('http') ? student.resumeUrl : `http://localhost:5000${student.resumeUrl}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-full btn-sm">
                   📎 View / Download
                 </a>
               </div>

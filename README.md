@@ -143,8 +143,8 @@ Frontend runs at: `http://localhost:3000`
 After running `node seed.js`:
 
 | Role        | Email                          | Password        |
-|-------------|-------------------------------|-----------------|
-| Super Admin | superadmin@interntrack.com     | SuperAdmin@123  |
+|-------------|--------------------------------|-----------------|
+| Sagar       |    sagar12345@gmail.com        | Sagarmail@123  |
 
 > ⚠️ **Change the super admin password after first login!**
 

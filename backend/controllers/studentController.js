@@ -65,8 +65,8 @@ const uploadResume = async (req, res) => {
       }
     }
 
-    student.resumeUrl = `/uploads/resumes/${req.file.filename}`;
-    student.resumeOriginalName = req.file.originalname;
+    const baseUrl = `${req.protocol}://${req.get('host')}`;
+    student.resumeUrl = `${baseUrl}/uploads/resumes/${req.file.filename}`; student.resumeOriginalName = req.file.originalname;
     await student.save();
 
     res.json({
