@@ -124,7 +124,7 @@ export default function StudentProfile() {
               <input
                 className="form-control"
                 type="tel"
-                placeholder="+91 98765 43210"
+                placeholder="Enter Phone number"
                 value={form.phone}
                 onChange={e => setForm({ ...form, phone: e.target.value })}
               />

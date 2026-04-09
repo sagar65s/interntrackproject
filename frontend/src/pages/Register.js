@@ -64,7 +64,7 @@ export default function Register() {
               className={`form-control${errors.name ? ' error' : ''}`}
               type="text"
               name="name"
-              placeholder="John Doe"
+              placeholder="Enter your name"
               value={form.name}
               onChange={handleChange}
               autoFocus
@@ -78,7 +78,7 @@ export default function Register() {
               className={`form-control${errors.email ? ' error' : ''}`}
               type="email"
               name="email"
-              placeholder="you@example.com"
+              placeholder="Enetr Email Id"
               value={form.email}
               onChange={handleChange}
             />
