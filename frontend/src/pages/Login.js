@@ -55,7 +55,7 @@ export default function Login() {
               className="form-control"
               type="email"
               name="email"
-              placeholder="Enter Email Id"
+              placeholder="you@example.com"
               value={form.email}
               onChange={handleChange}
               autoComplete="email"

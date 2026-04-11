@@ -4,10 +4,11 @@ const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
 
-const authRoutes = require('./routes/auth');
+const authRoutes    = require('./routes/auth');
 const studentRoutes = require('./routes/students');
 const projectRoutes = require('./routes/projects');
-const adminRoutes = require('./routes/admin');
+const adminRoutes   = require('./routes/admin');
+const emailRoutes   = require('./routes/email');
 
 const app = express();
 
@@ -19,17 +20,18 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve uploaded files
+// Serve uploaded files with CORS headers
 app.use('/uploads', (req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 }, express.static(path.join(__dirname, 'uploads')));
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/students', studentRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/email', emailRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

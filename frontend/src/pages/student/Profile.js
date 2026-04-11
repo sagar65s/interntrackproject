@@ -124,7 +124,7 @@ export default function StudentProfile() {
               <input
                 className="form-control"
                 type="tel"
-                placeholder="Enter Phone number"
+                placeholder="+91 98765 43210"
                 value={form.phone}
                 onChange={e => setForm({ ...form, phone: e.target.value })}
               />
@@ -165,7 +165,7 @@ export default function StudentProfile() {
                   <div style={{ fontSize:'0.78rem', color:'var(--text3)', marginTop:3 }}>{profile.resumeOriginalName}</div>
                 </div>
                 <a
-                  href={profile.resumeUrl.startsWith('http') ? profile.resumeUrl : `http://localhost:5000${profile.resumeUrl}`}
+                  href={`${profile.resumeUrl}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-ghost btn-sm"

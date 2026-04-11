@@ -14,15 +14,15 @@ const seedSuperAdmin = async () => {
     }
 
     await User.create({
-      name: 'Sagar',
-      email: 'sagar12345@gmail.com',
-      password: 'Sagarmail@123',
+      name: 'Super Admin',
+      email: 'superadmin@interntrack.com',
+      password: 'SuperAdmin@123',
       role: 'superadmin'
     });
 
     console.log('✅ Super Admin created successfully');
-   // console.log('Email: superadmin@interntrack.com');
-    //console.log('Password: SuperAdmin@123');
+    console.log('Email: superadmin@interntrack.com');
+    console.log('Password: SuperAdmin@123');
     console.log('⚠️  IMPORTANT: Change the password after first login!');
     process.exit(0);
   } catch (error) {
