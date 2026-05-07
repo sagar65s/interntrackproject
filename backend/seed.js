@@ -18,7 +18,7 @@ const seedSuperAdmin = async () => {
       email: 'superadmin@interntrack.com',
       password: 'SuperAdmin@123',
       role: 'superadmin'
-    });
+    }); 
 
     console.log('✅ Super Admin created successfully');
     console.log('Email: sagar12345@gmail.com');
