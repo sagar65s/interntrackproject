@@ -21,8 +21,8 @@ const seedSuperAdmin = async () => {
     });
 
     console.log('✅ Super Admin created successfully');
-    console.log('Email: superadmin@interntrack.com');
-    console.log('Password: SuperAdmin@123');
+    console.log('Email: sagar12345@gmail.com');
+    console.log('Password: Sagarmail@123');
     console.log('⚠️  IMPORTANT: Change the password after first login!');
     process.exit(0);
   } catch (error) {
