@@ -22,8 +22,6 @@ import SuperDashboard from './pages/superadmin/Dashboard';
 import SuperStudents from './pages/superadmin/Students';
 import SuperAdmins from './pages/superadmin/Admins';
 
-console.log('Email: sagar12345@gmail.com');
-console.log('Password: Sagarmail@123');
 
 const PrivateRoute = ({ children, roles }) => {
   const { user, loading } = useAuth();
